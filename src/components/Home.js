@@ -158,8 +158,8 @@ export default class Home extends React.Component {
                                 this.state.cc.map(line =>
                                     <tr key={line.index}>
                                         <td className="text-left" style={{
-                                            borderBottomLeftRadius: '0.7rem',
-                                            borderTopLeftRadius: '0.7rem'
+                                            borderBottomLeftRadius: '0.5rem',
+                                            borderTopLeftRadius: '0.5rem'
                                         }}>{line.text}</td>
                                         <td>{line.cs}</td>
                                         <td>{line.ctc}</td>
@@ -168,8 +168,8 @@ export default class Home extends React.Component {
                                         <td>{line.cps}</td>
                                         <td>{line.tw}</td>
                                         <td style={{
-                                            borderBottomRightRadius: '0.7rem',
-                                            borderTopRightRadius: '0.7rem'
+                                            borderBottomRightRadius: '0.5rem',
+                                            borderTopRightRadius: '0.5rem'
                                         }}>{line.cr}</td>
                                     </tr>
                                 )
