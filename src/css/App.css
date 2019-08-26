@@ -159,10 +159,6 @@ body {
     text-align: start;
 }
 
-.merchantTable > tbody > tr:hover {
-    cursor: pointer;
-}
-
 .adTextBoxEdit:hover {
     cursor: pointer;
     background-color: rgba(232, 234, 237, 1);

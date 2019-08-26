@@ -140,9 +140,10 @@ export default class Home extends React.Component {
                 </Col>
                 <Col md={12}>
                     <div className="comp pt-4 pb-3 p-2">
-                        <Table className="merchantTable" hover borderless responsive>
+                        <Table className="merchantTable text-center" striped borderless responsive>
                             <thead>
-                            <tr className="text-left">
+                            <tr>
+                                <th>Line</th>
                                 <th>CS</th>
                                 <th>CTC</th>
                                 <th>CNC</th>
@@ -156,13 +157,20 @@ export default class Home extends React.Component {
                             {
                                 this.state.cc.map(line =>
                                     <tr key={line.index}>
+                                        <td className="text-left" style={{
+                                            borderBottomLeftRadius: '0.7rem',
+                                            borderTopLeftRadius: '0.7rem'
+                                        }}>{line.text}</td>
                                         <td>{line.cs}</td>
                                         <td>{line.ctc}</td>
                                         <td>{line.cnc}</td>
                                         <td>{line.ci}</td>
                                         <td>{line.cps}</td>
                                         <td>{line.tw}</td>
-                                        <td>{line.cr}</td>
+                                        <td style={{
+                                            borderBottomRightRadius: '0.7rem',
+                                            borderTopRightRadius: '0.7rem'
+                                        }}>{line.cr}</td>
                                     </tr>
                                 )
                             }
