@@ -1,0 +1,169 @@
+@font-face {
+    font-family: main;
+    src: url(../font/GoogleSans-Regular.ttf);
+}
+
+body {
+    font-family: main, sans-serif;
+}
+
+.comp {
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.file {
+    background-color: white;
+    border-width: 0;
+    border-radius: 0.3rem;
+}
+
+.file:hover {
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.file:focus {
+    outline: none;
+}
+
+.navbar {
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.select {
+    font-size: 1rem;
+    border-width: 0;
+    background-color: rgba(241, 243, 244, 1);
+    border-radius: 0.7rem;
+    height: 2.6rem;
+    resize: none;
+    outline: none;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.select:hover {
+    background-color: rgba(232, 234, 237, 1);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.select:focus {
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.select:focus:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.select:disabled {
+    background-color: rgba(241, 243, 244, 0);
+}
+
+.adTextBox {
+    font-size: 1rem;
+    border-width: 0;
+    background-color: rgba(241, 243, 244, 1);
+    border-radius: 0.3rem;
+    resize: none;
+    padding: 1.3rem;
+    height: 0.9rem;
+    outline: none;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textBox {
+    font-size: 1rem;
+    border-width: 0;
+    background-color: rgba(241, 243, 244, 1);
+    border-radius: 0.7rem;
+    resize: none;
+    padding: 1.3rem;
+    height: 1rem;
+    outline: none;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textBox:hover {
+    background-color: rgba(232, 234, 237, 1);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textBox:focus {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.textBox:focus:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.textBox:disabled {
+    background-color: rgba(241, 243, 244, 1);
+}
+
+.button {
+    background-color: rgba(63, 81, 181, 1);
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin: 1rem 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    border: solid grey 0;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:focus {
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: rgba(48, 63, 159, 1);
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.loginCard {
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    color: white;
+    background-color: #2BBBAD;
+}
+
+.footer > div > div > ul > li {
+    color: white;
+    background-color: #2BBBAD;
+}
+
+.sidebar-item {
+    border: none;
+}
+
+.sidebar-item:hover {
+    cursor: pointer;
+}
+
+.editText {
+    text-align: start;
+}
+
+.merchantTable > tbody > tr:hover {
+    cursor: pointer;
+}
+
+.adTextBoxEdit:hover {
+    cursor: pointer;
+    background-color: rgba(232, 234, 237, 1);
+}
