@@ -13,6 +13,7 @@ export default class Home extends React.Component {
         super(props);
         this.state = {
             cc: [],
+            cp : 0,
             file: '',
             fileName: 'Choose File',
             uploadPercentage: 0,
@@ -76,13 +77,18 @@ export default class Home extends React.Component {
 
                 fetch('http://localhost:8080/api/cc', packet)
                     .then(response => response.json())
-                    .then(result => this.setState({cc: result}))
+                    .then(result => this.setState({cc: result.cc, cp: result.cp}))
                     .catch(err => console.log(err));
 
             })
 
         } catch (err) {
 
+            this.setState({
+                fileName: 'Choose File',
+                alert: true,
+                alertText: err.message
+            });
             console.log(err)
 
         }
@@ -114,7 +120,7 @@ export default class Home extends React.Component {
                                     <div className='custom-file mb-5'>
                                         <FormGroup>
                                         <input
-                                            type='file'
+                                             type='file'
                                             className='custom-file-input'
                                             id='customFile'
                                             onChange={this.onChange}
@@ -139,7 +145,7 @@ export default class Home extends React.Component {
                         </form>
                 </Col>
                 <Col md={12}>
-                    <div className="comp pt-4 pb-3 p-2">
+                    <div className="comp pt-4 pb-3 p-2 mb-4">
                         <Table className="merchantTable text-center" striped borderless responsive>
                             <thead>
                             <tr>
@@ -174,6 +180,22 @@ export default class Home extends React.Component {
                                     </tr>
                                 )
                             }
+                            <tr>
+                                <td className="text-left" style={{
+                                    borderBottomLeftRadius: '0.5rem',
+                                    borderTopLeftRadius: '0.5rem'
+                                }}><b>CP</b></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td style={{
+                                    borderBottomRightRadius: '0.5rem',
+                                    borderTopRightRadius: '0.5rem'
+                                }}>{this.state.cp}</td>
+                            </tr>
                             </tbody>
                         </Table>
                     </div>
